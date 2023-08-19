@@ -7,7 +7,6 @@ const ListToDos = () => {
   const getTodos = async () => {
     const response = await fetch("http://localhost:5000/todos")
     const jsonData = await response.json(); 
-
     setTodos(jsonData);
   }
 
@@ -32,7 +31,7 @@ const ListToDos = () => {
     <>
       <div className="container mt-5">
         <h2>Basic Table</h2>           
-        <table class="table">
+        <table className="table">
           <thead>
             <tr>
               <th>Description</th>
